@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/echarts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script src="js/head.js"></script>
+<div class="container">
+    <div>
+        <div class="col-md-2">
+            <div class=" nav-pills nav-stacked  list-group">
+                <a href="cont.html" class="active list-group-item">内容管理</a>
+                <a href="add_content.html" class=" list-group-item" >添加内容</a>
+            </div>
+        </div>
+        <!--内容管理右边-->
+        <div class="col-md-10">
+            <strong>内容管理</strong><hr>
+            <div class="row col-md-12">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active list-unstyled" id="home">
+                        <a href="#qwe">内容管理</a>
+                    </li>
+                    <li role="presentation" id="profile" class="list-unstyled">
+                        <a href=" add_content.html">添加内容</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" ">
+                <div class="tab-content ">
+                    <table class=" table  ">
+                        <thead>
+                        <tr>
+                            <th>文章标题</th>
+
+                            <th>作者</th>
+                            <th>发布时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>泛Mooc职业教育，效果和就业为王</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>产品经理经常犯得7大错误，你造码？</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdow">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>如何正确的使用python日志系统</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownM" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownM">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>C语音const修饰符的怎么使用？</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>Android开发用onCreateOptinsMenu()如何创</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMe" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMe">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>怎样才能成为优秀的iOS开发工程师</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="drop">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>Android今年推出了一些什么新技术？</td>
+
+                            <td>李小龙</td>
+                            <td>2019/04/08</td>
+                            <th>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dr" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        操作
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dr">
+                                        <li><a href="#">编辑</a></li>
+                                        <li><a href="#">删除</a></li>
+                                        <li><a href="#">锁定</a></li>
+                                        <li><a href="#">修改密码</a></li>
+                                    </ul>
+                                </div>
+                            </th>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <nav class="navbar-right">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    Copyright @ 2019 www.tecode.com 码教授
+</div>
+
+
+</body>
+</html>

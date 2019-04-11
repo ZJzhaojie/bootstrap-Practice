@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/echarts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--公用头部调用-->
+    <script src="js/head.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="user.html"  class="list-group-item ">用户管理</a>
+                <a href="user2.html"  class="list-group-item active">用户搜索</a>
+                <a href="" role="button" class="list-group-item" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">添加用户</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <!--<div class="page-header">-->
+            <!--<h1>用户管理</h1>-->
+            <!--</div>-->
+            用户管理
+            <hr>
+
+            <div class="navbar">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs " role="tablist">
+                    <li  ><a href="user.html" >用户列表</a></li>
+                    <li role="presentation" class="active"><a href="user2.html" >用户搜索</a></li>
+                    <li role="presentation"><a href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">添加用户</a></li>
+
+                </ul>
+
+                <!-- Tab panes -->
+
+            </div>
+            <div class="col-md-12">
+                <div class="alert alert-info" role="alert"><strong>技巧提示：</strong>支持模糊搜索和匹配搜索，匹配搜索使用*代替</div>
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name12" class="control-label">用户名:</label>
+                        <input type="text" class="form-control" id="recipient-name12" placeholder="用户名:">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name11" class="control-label">UID:</label>
+                        <input type="text" class="form-control" id="recipient-name11" placeholder="请输入UID:">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name14" class="control-label">会员:</label>
+                        <select class="form-control" id="recipient-name14" >
+                            <option>限制会员</option>
+                            <option>44会员</option>
+                            <option>55会员</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--尾部调用-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">添加用户</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">用户名:</label>
+                        <input type="text" class="form-control" id="recipient-name" placeholder="用户名:">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name1" class="control-label">用户密码:</label>
+                        <input type="password" class="form-control" id="recipient-name1" placeholder="请输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name2" class="control-label">确认用户密码:</label>
+                        <input type="password" class="form-control" id="recipient-name2" placeholder="请确认请输入用户密码">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name3" class="control-label">输入用户邮箱:</label>
+                        <input type="text" class="form-control" id="recipient-name3" placeholder="请输入用户邮箱:">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name4" class="control-label">会员:</label>
+                        <select class="form-control" id="recipient-name4" >
+                            <option>限制会员</option>
+                            <option>44会员</option>
+                            <option>55会员</option>
+                        </select>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/foot.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/echarts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <!--公用头部调用-->
+    <script src="js/head.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="">
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4><strong>网站程序有漏洞，急需修复</strong></h4>
+            <h5><strong>当前版本程序(v1.22)存在严重安全问题,容易造成攻击,请即刻修复</strong></h5>
+            <button class="btn btn-danger"><strong>立即修复</strong></button>
+            <button class="btn btn-default" data-dismiss="alert"><strong>稍后处理</strong></button>
+        </div>
+    </div>
+</div>
+<!--数据统计-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bs-example ">
+                <div class="panel panel-default">
+                    <div class="panel-heading">网站数据统计</div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>统计项目</th>
+                            <th>今日</th>
+                            <th>昨日</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">注册会员</th>
+                            <td>200</td>
+                            <td>400</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">登录会员</th>
+                            <td>4100</td>
+                            <td>5112</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">今日发帖</th>
+                            <td>1540</td>
+                            <td>4511</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">转载次数</th>
+                            <td>150</td>
+                            <td>110</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">网站热帖</div>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-italic" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            码教授职业教育，效果和成就为王</a></td>
+                        <td class="text-right"><a href="">2019/04/08</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--数据表-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">今日访客统计</div>
+                <div class="panel-body">
+                    <div id="main" style="width:100%;height:320px;"></div>
+                </div>
+                <script src="js/js1.js"></script>
+            </div>
+        </div>
+        <div class="col-md-5 ">
+            <div class="panel panel-default">
+                <div class="panel-heading">服务器状态</div>
+                <div class="panel-body">
+                    <h5>内存使用率：40%</h5>
+                    <div class="progress">
+
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                             aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            <span class="sr-only">40% Complete (success)</span>
+                        </div>
+                    </div>
+                    <h5>内存使用率：20%</h5>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                    <h5>内存使用率：60%</h5>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div>
+                    <h5>内存使用率：80%</h5>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar"
+                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--留言板-->
+<div class="container navbar">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default ">
+                <div class="panel-heading"><strong>团队留言板</strong></div>
+                <div class="panel-body">
+                    <div class="col-md-7 ">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-2 pull-left col-xs-5">
+                                        <img src="images/android.png" alt="" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="media-body text-left">
+                                        <h4><strong>卓大哥</strong></h4>
+                                        <h5>技术大哥，今晚把网站程序升级一哈,现在的系统有漏洞，安全起见！</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-2 pull-right col-xs-5">
+                                        <img src="images/ios.png" alt="" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class="media-body text-right">
+                                        <h4><strong>技术大哥</strong></h4>
+                                        <h5>收到，今晚凌晨两点准时升级</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-md-2 col-xs-5 pull-right">
+                                        <img src="images/ios.png" alt="" class="img-rounded img-responsive">
+                                    </div>
+                                    <div class=" media-body text-right">
+                                        <h4><strong>技术大哥</strong></h4>
+                                        <h5>你先在站点发布一下通知哈！</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="row ">
+                                    <div class="col-md-2 col-xs-5 pull-left">
+                                        <img class="media-object img-responsive" src="images/android.png" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4><strong>卓大哥</strong></h4>
+                                        <h5>好嘞！</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--留言板块-->
+                    <div class="col-md-5">
+                        <h5><strong>请输入留言内容</strong></h5>
+                        <textarea class="form-control" rows="5" placeholder="请输入留言内容"></textarea>
+                        <br>
+                        <button class="btn  btn-default ">留言</button>
+                        <br>
+                        <br>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">团队联系手册</div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">站长(李小龙):<span class="glyphicon glyphicon-phone"
+                                                                              aria-hidden="true"></span>13845874529
+                                    </li>
+                                    <li class="list-group-item">技术(刘大哥):<span class="glyphicon glyphicon-phone"
+                                                                              aria-hidden="true"></span>13845874529
+                                    </li>
+                                    <li class="list-group-item">推广(张二哥):<span class="glyphicon glyphicon-phone"
+                                                                              aria-hidden="true"></span>13845874529
+                                    </li>
+                                    <li class="list-group-item">客服(王女士):<span class="glyphicon glyphicon-phone"
+                                                                              aria-hidden="true"></span>13845874529<span
+                                            class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>028-888888
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--公用尾部调用-->
+<script src="js/foot.js"></script>
+</body>
+</html>
